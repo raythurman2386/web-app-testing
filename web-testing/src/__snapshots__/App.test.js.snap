@@ -1,5 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`My Test Suite should snapshot ball renders 1`] = `
+<div>
+  <h1>
+    At Bat Stats
+  </h1>
+  <p>
+    Balls: 
+    0
+  </p>
+  <p>
+    Strikes: 
+  </p>
+</div>
+`;
+
 exports[`My Test Suite should snapshot renders 1`] = `
 <div>
   <h1>
@@ -11,6 +26,21 @@ exports[`My Test Suite should snapshot renders 1`] = `
   </p>
   <p>
     Strikes: 
+  </p>
+</div>
+`;
+
+exports[`My Test Suite should snapshot strike renders 1`] = `
+<div>
+  <h1>
+    At Bat Stats
+  </h1>
+  <p>
+    Balls: 
+  </p>
+  <p>
+    Strikes: 
+    0
   </p>
 </div>
 `;

@@ -23,8 +23,14 @@ describe('My Test Suite', () => {
     expect(checkButtons.length).toBe(4)
   })
 
-  it('should snapshot renders', () => {
+  it('should snapshot ball renders', () => {
     const component = renderer.create(<Display ball={0} />)
+    let tree = component.toJSON()
+    expect(tree).toMatchSnapshot()
+  })
+
+  it('should snapshot strike renders', () => {
+    const component = renderer.create(<Display strike={0} />)
     let tree = component.toJSON()
     expect(tree).toMatchSnapshot()
   })
