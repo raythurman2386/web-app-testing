@@ -12,7 +12,7 @@ describe('My Test Suite', () => {
   it('Renders the App component', () => {
     const wrapper = rtl.render(<App />)
     // assertions will be here
-    expect(wrapper.findByText(/at bat/i))
+    expect(wrapper.getByText(/at bat/i))
   })
 
   it('Checks how many buttons there are', () => {
