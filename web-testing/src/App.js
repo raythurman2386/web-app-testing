@@ -7,9 +7,9 @@ function App() {
   const [ball, setBall] = useState(0)
   const [strike, setStrike] = useState(0)
 
-  const handleScoreboard = callStrike => {
+  const handleScoreboard = action => {
     // Refactor this dumpster file
-    switch (callStrike) {
+    switch (action) {
       case 'strike':
         const newStrike = strike + 1
         if (newStrike === 3) {
