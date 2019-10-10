@@ -3,8 +3,14 @@
 // the dashboard component
 import React from 'react'
 
-const display = () => {
-  return <div>Display Component</div>
+const Display = ({ ball, strike }) => {
+  return (
+    <div>
+      <h1>At Bat Stats</h1>
+      <p>Balls: {ball}</p>
+      <p>Strikes: {strike}</p>
+    </div>
+  )
 }
 
-export default display
+export default Display

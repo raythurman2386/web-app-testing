@@ -4,8 +4,15 @@
 // changes here should update the display component
 import React from 'react'
 
-const dashboard = () => {
-  return <div>Dashboard Component</div>
+const Dashboard = ({ handleScoreboard }) => {
+  return (
+    <div>
+      <button onClick={() => handleScoreboard('strike')}>Strike</button>
+      <button onClick={() => handleScoreboard('ball')}>Ball</button>
+      <button onClick={() => handleScoreboard('foul')}>Foul</button>
+      <button onClick={() => handleScoreboard('hit')}>Hit</button>
+    </div>
+  )
 }
 
-export default dashboard
+export default Dashboard
