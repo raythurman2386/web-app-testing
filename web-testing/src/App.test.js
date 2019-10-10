@@ -10,7 +10,7 @@ it('renders "all about kittens" text', () => {
   console.log(wrapper.debug())
 
   // query
-  // const hasKittensText = wrapper.getByText(/all about kittens/i)
+  const hasText = wrapper.getByText(/display/i)
   // assertions will be here
-  expect(wrapper.getByText(/all about kittens/i))
+  expect(hasText).toBeVisible()
 })
