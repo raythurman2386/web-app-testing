@@ -7,6 +7,9 @@ import React from 'react'
 const Dashboard = ({ handleScoreboard }) => {
   return (
     <div>
+      {/* Maybe change these to inputs with a type of button?
+          or maybe type of submit and have a value to send to the handle change
+      */}
       <button onClick={() => handleScoreboard('strike')}>Strike</button>
       <button onClick={() => handleScoreboard('ball')}>Ball</button>
       <button onClick={() => handleScoreboard('foul')}>Foul</button>

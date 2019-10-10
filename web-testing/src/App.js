@@ -8,6 +8,7 @@ function App() {
   const [strike, setStrike] = useState(0)
 
   const handleScoreboard = callStrike => {
+    // Refactor this dumpster file
     switch (callStrike) {
       case 'strike':
         const newStrike = strike + 1
