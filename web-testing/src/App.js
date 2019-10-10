@@ -1,11 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 
+import { useLocalStorage } from './hooks/useLocalStorage'
 import Display from './components/Display'
 import Dashboard from './components/Dashboard'
 
 function App() {
-  const [ball, setBall] = useState(0)
-  const [strike, setStrike] = useState(0)
+  const [ball, setBall] = useLocalStorage('ball', 0)
+  const [strike, setStrike] = useLocalStorage('strike', 0)
 
   const handleScoreboard = action => {
     // Refactor this dumpster file
