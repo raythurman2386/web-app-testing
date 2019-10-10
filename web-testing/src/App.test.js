@@ -9,10 +9,12 @@ import Display from './components/Display'
 afterEach(rtl.cleanup)
 
 describe('My Test Suite', () => {
-  it('Renders the App component', () => {
+  it('Searches for at bat text', () => {
     const wrapper = rtl.render(<App />)
+
+    const atBatText = wrapper.getByText(/at bat/i)
     // assertions will be here
-    expect(wrapper.getByText(/at bat/i))
+    expect(atBatText).toBeInTheDocument()
   })
 
   it('Checks how many buttons there are', () => {
